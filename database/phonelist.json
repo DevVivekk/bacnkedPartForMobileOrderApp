@@ -1,0 +1,42 @@
+[
+  {
+    "phone_name": "Iphone 15",
+    "phone_price": 150000,
+    "phone_type": "IOS",
+    "phone_processor": "Bionic",
+    "phone_os": "IOS",
+    "phone_image":"https://m.media-amazon.com/images/I/61HZS-ZSCLL._SX679_.jpg"
+  },
+  {
+    "phone_name": "Microsoft Lumia 950",
+    "phone_price": 7000,
+    "phone_type": "Microsoft",
+    "phone_processor": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A57)",
+    "phone_os": "Microsoft Windows 10",
+    "phone_image":"https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2015/11/VRG_VHO_398_Lumia_950_XL.jpg?ssl=1&quality=80&w=800"
+  },
+  {
+    "phone_name": "Realme 8 5G",
+    "phone_price": 120000,
+    "phone_type": "Android",
+    "phone_processor": "Mediatek",
+    "phone_os": "Android 13",
+    "phone_image":"https://images-cdn.ubuy.co.in/657eb67f35923252914652c2-realme-8-5g-dual-sim-128gb-rom-6gb-ram.jpg"
+  },
+  {
+    "phone_name":"Motorola edge 40",
+    "phone_price": 25000,
+    "phone_type": "Android",
+    "phone_processor": "Dimensity 8020 Processor",
+    "phone_os": "Android 12",
+    "phone_image":"https://motorolain.vtexassets.com/arquivos/ids/158550-800-auto?width=800&height=auto&aspect=true"
+  },
+  {
+    "phone_name": "Nokia G60",
+    "phone_price": 13000,
+    "phone_type": "Android",
+    "phone_processor": "Qualcomm SM6375 Snapdragon 695 5G (6 nm)",
+    "phone_os": "Android 12",
+    "phone_image":"https://m.media-amazon.com/images/I/714-klcm1rL._SY879_.jpg"
+  }
+]
