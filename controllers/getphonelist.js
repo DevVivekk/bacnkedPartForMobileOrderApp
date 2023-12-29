@@ -5,14 +5,14 @@ const getphonelist = async (req, res, next) => {
   try {
     const { phone_name, phone_price, phone_type, phone_processor, phone_os, page } = req.query;
     const query = {};
-    console.log("api hit")
-    //handling pagination
+   //handling pagination
     let ITEM_PER_PAGE;
     if(page ==="undefined"){
        ITEM_PER_PAGE = 2;
     }else{
       ITEM_PER_PAGE=page;
     }
+    console.log(ITEM_PER_PAGE);
     if (phone_name) {
       query.phone_name = { $regex: phone_name, $options: "i" };
     }
@@ -32,8 +32,13 @@ const getphonelist = async (req, res, next) => {
     if (phone_os) {
       query.phone_os = phone_os;
     }
-    const getdata = await phonemodel.find(query).limit(ITEM_PER_PAGE)
-    return res.status(200).json(getdata);
+    if(ITEM_PER_PAGE>=5){ //if item per page === total products remove limit
+      const getdata = await phonemodel.find(query)
+      return res.status(200).json(getdata);
+    }else{
+      const getdata = await phonemodel.find(query).limit(ITEM_PER_PAGE)
+      return res.status(200).json(getdata);
+    }
   } catch (e) {
     console.error(e);
     return next(new ErrorHandler(e, 500));
